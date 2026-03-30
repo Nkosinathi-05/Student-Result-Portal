@@ -10,7 +10,7 @@ const studentResultsArray = [
   },
   {
     id: 224141944,
-    studentName: "Mbalenhle",
+    studentName: "Zinhle",
     class: "SZ02",
     Subjects: [
       { name: "Mathematics Literacy", score: 80 },

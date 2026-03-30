@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expenses Tracker</title>
+    <link rel="stylesheet" href="../CSS/Personal-expenses-tracker.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-button-class">
+        <input
+          class="inputs"
+          type="text"
+          name="expenses-input"
+          id="js-expenses-input"
+          placeholder="Enter your expenses here."
+          required
+        />
+        <input
+          class="inputs"
+          type="text"
+          name="expenses-amount"
+          id="js-amount-input"
+          placeholder="Enter amount here."
+          required
+        />
+        <button onclick="addExpenses()" class="add-expense-button">ADD</button>
+      </div>
+
+      <div class="js-expenses-list-output expenses-list-view"></div>
+      <div class="js-total-amount-output"></div>
+    </div>
+
+    <script src="../JAVASCRIPT/Personal-expenses-tracker.js"></script>
+  </body>
+</html>
