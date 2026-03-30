@@ -1,0 +1,205 @@
+/*Styles applying to all pages*/
+body {
+  margin: 0;
+  background-color: black;
+}
+.bg-image {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60%;
+  height: 100vh;
+
+  background-image: url("../IMAGES/skill-x-logo.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 100% auto;
+
+  z-index: -1; /* stays behind everything */
+}
+/*LOGIN SECTION*/
+.image-div {
+  display: flex;
+  align-items: center;
+  align-items: center;
+  background-color: black;
+  height: 250px;
+}
+
+.logInContainer {
+  display: flex;
+  align-items: center; /* vertical centering */
+  height: 600px;
+  width: 50%;
+}
+h2 {
+  margin-bottom: 20px;
+  color: rgb(235, 129, 44);
+}
+.student-details-input {
+  width: 100%;
+  height: 30px;
+}
+input {
+  margin-right: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgb(235, 129, 44);
+  font-size: large;
+  width: 60%;
+  background-color: rgb(22, 22, 22);
+  border: none;
+  border-radius: 5px;
+}
+input:focus {
+  border: 2px solid rgb(235, 129, 44);
+  outline: none;
+}
+.login-btn {
+  font-weight: bold;
+  font-size: larger;
+  width: 30%;
+  background-color: rgb(235, 129, 44);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  transition: 0.15s;
+}
+.login-btn,
+.logout-btn:hover {
+  background-color: rgb(226, 110, 15);
+}
+.login-btn,
+.logout-btn:active {
+  transform: scale(1.05);
+  transform: translateY(-5px); /*move button up when you click*/
+}
+.incorrect-student-number {
+  margin-top: 5px;
+  color: red;
+  font-weight: bold;
+  font-size: 15px;
+}
+/*RESULT SECTION*/
+.container {
+  align-items: center;
+  height: 600px;
+  width: 40%;
+  padding: 5px;
+}
+
+.logout-btn {
+  margin-top: 5%;
+  margin-left: 35%;
+  font-weight: bold;
+  font-size: larger;
+  width: 30%;
+  background-color: rgb(235, 129, 44);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+  transition: 0.15s;
+}
+
+.student-details-container {
+  margin-top: 100px;
+  width: 100%;
+}
+
+.student-details-display {
+  background-color: rgb(63, 63, 61);
+  color: beige;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 70% 40%;
+}
+.stu-details {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.stu-query {
+  font-weight: bold;
+}
+/*Table styling*/
+.result-display table {
+  border-collapse: collapse;
+  border: none;
+  margin-top: 30px;
+  width: 100%;
+  background-color: rgb(235, 129, 44);
+}
+.status-display table {
+  border-collapse: collapse;
+  border: none;
+  width: 100%;
+  background-color: rgb(235, 129, 44);
+}
+
+/*Table headings styling*/
+.average-column,
+.status-column,
+.subject-name-column,
+.score-column,
+.grade-column {
+  border: 2px solid black;
+  width: 40%;
+  padding: 8px;
+}
+.average-column {
+  border-top: none;
+}
+.score-column,
+.grade-column {
+  width: 30%;
+}
+
+/*Table rows styling*/
+.subject-name-row,
+.score-row,
+.grade-row,
+.average-row,
+.pass-status,
+.fail-status {
+  text-align: center;
+  border: 2px solid black;
+  padding: 8px;
+}
+.average-row {
+  border-top: none;
+}
+.pass-status {
+  color: green;
+}
+.fail-status {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-size: 70%;
+    background-position: center top; /* better for phones */
+  }
+  .student-details-input {
+    flex-direction: column;
+  }
+
+  input,
+  .login-btn {
+    width: 100%;
+  }
+
+  .student-details-display {
+    grid-template-columns: 1fr; /* stack instead of 2 columns */
+  }
+
+  .logout-btn {
+    width: 100%;
+    margin-left: 0;
+  }
+}

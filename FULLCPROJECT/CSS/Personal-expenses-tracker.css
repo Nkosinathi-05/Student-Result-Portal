@@ -1,0 +1,54 @@
+body {
+  background-color: grey;
+}
+.container {
+  padding: 10px;
+  background-color: rgb(124, 120, 120);
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  box-shadow: 2px 2px 10px;
+}
+.inputs {
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-bottom: 2px solid black;
+  border-radius: 5px;
+}
+.delete-expense-button,
+.add-expense-button {
+  border: none;
+  font-weight: bold;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.add-expense-button {
+  background-color: rgb(53, 175, 53);
+}
+.delete-expense-button {
+  background-color: rgb(238, 74, 74);
+}
+::placeholder {
+  color: white;
+}
+.expenses-list-view,
+.input-button-class {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 38% 38% 100px;
+  column-gap: 10px;
+  row-gap: 5px;
+}
+.list-grid-heading {
+  font-size: 20px;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  margin-bottom: 0;
+}
+
+.js-total-amount-output {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
